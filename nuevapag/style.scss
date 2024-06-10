@@ -1,0 +1,219 @@
+// Estilos generales
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    line-height: 1.6;
+
+    &.planetas {
+        background-image: url('https://media2.giphy.com/media/pWhWtKdqwOAco/giphy.webp?cid=790b76110vmfeos4np5bnuvaeeexljupga9sgyqhs6pgl1yc&ep=v1_gifs_search&rid=giphy.webp&ct=g');
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
+header, footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header {
+    position: relative;
+
+    .header-bg {
+        position: absolute;
+        top: -20px;
+        left: 0;
+        width: 100%;
+        height: 500px; // Ajusta la altura según sea necesario
+        background-size: cover;
+        z-index: -1;
+        filter: brightness(1.2) contrast(1.2); // Ajusta los valores según sea necesario
+    }
+
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        padding: 20px;
+
+        nav {
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    display: inline-block;
+                    margin-right: 20px;
+
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+// Estilos para la imagen separadora
+.separador {
+    img {
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+}
+
+// Estilos para el contenido adicional
+.contenido-adicional {
+    padding: 20px;
+}
+
+// Estilos para la sección acerca de nosotros
+.acerca-de-nosotros {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+    &-texto {
+        flex: 1;
+    }
+
+    &-imagen {
+        max-width: 300px; // Ajusta el tamaño según sea necesario
+        margin-left: 20px; // Espacio entre el texto y la imagen
+    }
+
+    h3,
+    h4 {
+        margin-top: 0;
+    }
+}
+
+// Media queries para tabletas y dispositivos móviles
+@media screen and (max-width: 768px) {
+    .header-bg {
+        height: 300px; // Ajusta la altura para dispositivos más pequeños
+    }
+
+    .acerca-de-nosotros {
+        flex-direction: column;
+        align-items: flex-start;
+
+        &-imagen {
+            margin-left: 0;
+            margin-top: 20px;
+            max-width: 100%; // Ajusta el tamaño según sea necesario
+        }
+    }
+
+    .navbar {
+        padding: 10px;
+        
+        nav ul {
+            text-align: center;
+
+            li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-bg {
+        height: 200px; // Ajusta la altura para dispositivos móviles
+    }
+
+    .navbar {
+        padding: 10px; // Ajusta el relleno de la barra de navegación
+    }
+
+    nav ul li {
+        margin-right: 10px; // Ajusta el margen entre elementos de la barra de navegación
+    }
+}
+
+// Estilos para las imágenes dentro de la clase .planet
+.planet {
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    p {
+        color: rgb(207, 44, 44); // Cambia el color del texto aquí
+        font-family: Georgia, 'Times New Roman', Times, serif; // Cambia la fuente del texto aquí
+        font-size: 20px; // Cambia el tamaño de la fuente aquí
+    }
+
+    h3 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; // Cambia la fuente del texto aquí
+        color: rgb(157, 199, 60); // Cambia el color del texto aquí
+    }
+}
+
+h1 {
+    margin-top: 0;
+}
+
+h2 {
+    margin-top: 20px;
+    color: rgb(221, 32, 32); // Cambia "blue" por el color que desees
+}
+
+.titulo-planetas {
+    color: rgb(196, 48, 48); // Cambia "blue" por el color que desees
+}
+
+.star-type {
+    margin-bottom: 20px;
+
+    h3 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    ul {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+}
+
+// Estilos para la imagen de la estrella gigante
+img.estrella-gigante {
+    width: 100%; // Ancho deseado
+    max-width: 400px;
+    height: auto; // Altura automática para mantener la proporción
+    float: left; // Alineación a la izquierda
+    margin-right: 20px; // Margen derecho para separar la imagen del texto
+}
+
+// Estilos para la imagen de la enana roja
+img.enana-roja {
+    width: 100%; // Ancho deseado
+    max-width: 200px;
+    height: auto; // Altura automática para mantener la proporción
+    float: left; // Alineación a la izquierda
+    margin-right: 20px; // Margen derecho para separar la imagen del texto
+}
